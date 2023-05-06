@@ -6,50 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Lenguaje de Programación</title>
 </head>
-
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="button.css">
 <body>
     <nav>
-
+        <h1>Aprendiendo a guardar con Git</h1>
+        <a href="index.html"><button>Página principal</button></a>
+        <button>Aprende más</button>
+        <ul>
+            <li>GitHub-logo-2-imagen</li>
+            <li>GitHub-logo-2-imagen</li>
+        </ul>
     </nav>
     <header>
-
+        <h1>Git y GitHub</h1>
+        <img src="https://marketing4ecommerce.net/wp-content/uploads/2018/06/GitHub-logo-2-imagen.jpg" alt="GitHub" width="100%">
     </header>
     <main>
         <article>
             <section>
-                <h3>Creando un repositorio local</h3>
+                <h3 id="seccion1">Creando un repositorio local</h3>
                 <p>Un repositorio no es nada más que un directorio, una carpeta o contenedor de archivos en el cual almacenaremos nuestro trabajo</p>
                 <p>Elegida una ubicación en nuestro espacio de almacenamiento, crea una carpeta con el nombre que quieras. Bien, presta atención a este atajo, dando clic derecho a la carpeta creada, hasta aquí vacia, y selecciona <spam>abrir en terminal</spam>.</p>
                 <p>Sucedera que se abrira una ventana de terminal de Windows Powerhell, no te preocupes si no la conoces, pues sólo deberas escribir "code ." (code tecla espacio y signo punto).</p>
                 <p><span>Bienvenido a Visual Studio Code</span> donde puede ver el Explorador, la carpeta con el nombre que has puesto pero esta vacío, comienza a llenarla.</p>
                 <p>Crearemos un "nuevo archivo" con el nombre index.html, el cual será nuestra página principal y también un archivo con el nombre Readme.md, que es un archivo texto para que escribar la descripción de tu proyecto</p>
-                <h3>Git local</h3>
-                <p>^Paso siguiente, utilizaremos la terminal desde el Visual Studio Code, oprimiendo Crtl + ñ.</p>
+            </section>
+            <section>
+                <h3 id="seccion2">Git local</h3>
+                <p>Paso siguiente, utilizaremos la terminal desde el Visual Studio Code, oprimiendo Crtl + ñ.</p>
                 <p>Esta terminal automaticamente se posiciona en la ubicación de nuestra carpeta, es muy importante prestar atención en ese posicionamiento, debe ser el mismo en el que estamos trabajando.</p>
                 <p>En la terminal abierta, escribiremos los siguientes comandos:</p>
                 <p><span>git init</span>: inicializa la funcionalidad del git, creando una carpeta oculta con el nombre de .git, es necesario recomendarte que no toques esos archivos, no los borres ni los cambies de ubicación, <span>no toques éso!</span>.</p>
-                <p>Como será nuestro repositorio, lo registramos con nuestros datos, utilizando el comando "git config --global user.name <div class="comillas">"nombre de ejemplo"</div>", de la misma manera repetimos para "git commit config --global user.email <div class="comillas">"email@deprueba.com"</div>".</p>
+                <p>Como será nuestro repositorio, lo registramos con nuestros datos, utilizando el comando "git config --global user.name <spam class="comillas">"nombre de ejemplo"</spam>", de la misma manera repetimos para "git commit config --global user.email <spam class="comillas">"email@deprueba.com"</spam>".</p>
             </section>
             <section>
-                <h3>Creando repositorio en GItHub:</h3>
-                <p>Una vez ingresado en la cuenta creada en la página oficial de GitHut, a la parte superior del margen derecho, se puede desplegar la opción de <spam>"New repository"</spam>.</p>
+                <h3 id="seccion3">Creando repositorio en GitHub:</h3>
+                <p>Una vez ingresado en la cuenta creada en la página oficial de GitHub, a la parte superior del margen derecho, se puede desplegar la opción de <spam>"New repository"</spam>.</p>
                 <p>Antes de darle clic a <spam>Create repository</spam>, deberás completar los campos en blanco, comenzando por el nombre de repositorio, si quieres, puedes agregar una descripción, luego seleccionar el estado que tendrá el proyecto, puede ser público o privado, como también puedes o no iniciar agregando un archivo README.</p>
                 <p>Listo, así como el Shampoo lleva instrucciones, no queda más que seguir las mismas que ofrece la página de GitHub.</p>
                 <p>Como ya hemos hecho un git init, ya tenemos nuestro archivo README.md, sólo queda por hacer un "git add .", y un "git commit -m "el nombre o detalle de lo que has hecho que referencie a los cambios"; de esta manera agregaremos todos los archivos al directorio .git. Ahora si, pasaremos al siguiente apartado que menciona la página y escribiremos "git remote add origin https://github.com/tunombreusuario/tunombrerepositoriocreado (bastante largo? utiliza el copy paste!), de esta manera se conectará con el repositorio de GitHub al cual enviaremos nuestros archivos, mediante el uso del comando "git push -u origin master".</p>
                 <p>Compruébalo, tanto tu carpeta local, como el repositorio de GitHub tienen los mismos archivos.</p>
             </section>
             <section>
-                <h3>Creando una rama de desarrollo</h3>
+                <h3 id="seccion4">Creando una rama de desarrollo</h3>
                 <p>También conocida como branch, crearemos otra rama a la cual iremos modificando, es así que en nuestra terminal escribiremos "git branch develop", la famosa rama de desarrollador en la que realizaremos todos nuestros cambios hasta que esten listos para ser publicados en nuestra rama master.</p>
                 <p>Si te arrepientes puedes eliminarla de la misma manera escribiendo "git branch -D develop", si no, continuemos. Agrega los cambios y realiza un commit, para luego hacer uso del push con el siguiente comando "git push --set-upstream origin develop".</p>
-                <p>Antes de seguir avanzando, haremos un salto gigante, una vez finalizado y aplicado los cambios que queremos, vamos a fusionar nuestros arvhicos con la rama principal del proyecto, para ellos se utiliza el siguiente comando "git marge origin master"</p>
-                <p></p>
+                <p>Antes de seguir avanzando, haremos un salto gigante, una vez finalizado y aplicado los cambios que queremos a nuestra rama develop, vamos a fusionar nuestros arvhicos con la rama principal del proyecto, para ellom, devemos posicionarnos en nuestra rama principal, consulta mediante el comando "git branch", posisiónate mediante "git checkout master", y luego se utiliza el siguiente comando: "git marge develop".</p>
+                <p>Ahora si, entra a tus archivos html y modifícalos, carga información, usa frameworks, aplícales tus propios estilos mediante css, <span>juega!</span>.</p>
             </section>
         </article>
     </main>
-
+    <aside>
+        <h3>INDICE</h3>
+        <ul>
+            <a href="#seccion1"><li>Creando un repositorio local</li></a>
+            <a href="#seccion2"><li>Git local</li></a>
+            <a href="#seccion3"><li>Creando repositorio en GitHub</li></a>
+            <a href="#seccion4"><li>Creando una rama de desarrollo</li></a>
+            <a href="#nosotros"><li>Nosotros Inc</li></a>
+        </ul>
+    </aside>
     <footer>
-
+        <h3 id="nosotros">Contacto</h3>
+        <p>Teléfono: 370-4309508</p>
+        <p>Email: <a href="ricardopedemonte2018@gmail.com">ricardopedemonte2018@gmail.com</a></p>
+        <p>Dirección: Marighetti 375, Formosa, Argentina</p>
+        <h3>Redes Sociales</h3>
+        <ul>
+            <p><a href="https://www.facebook.com/RikrdoPede">Facebook</a></p>
+            <p><a href="https://www.twitter.com/RikrdoPede">Twitter</a></p>
+            <p><a href="https://www.instagram.com/RikrdoPede">Instagram</a></p>
+        </ul>
+        <p>Copyright &copy; Pedes, Inc. 2023</p>
     </footer>
 </body>
 
