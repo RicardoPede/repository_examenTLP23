@@ -1,0 +1,9 @@
+.div_neon{
+    color: rgb(255,98,41);
+}
+.neon:hover{
+    text-shadow: 0 0 5px #fff, 
+    0 0 10px #fff, 0 0 15px #ff852e,
+    0 0 20px #ff852e, 0 0 25px #ff852e,
+    0 0 30px #ff852e;
+}
