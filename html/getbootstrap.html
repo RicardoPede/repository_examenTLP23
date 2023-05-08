@@ -8,6 +8,7 @@
 </head>
 <link rel="stylesheet" href="../css/style.css"/>
   <link rel="stylesheet" href="../css/button.css"/>
+  <link rel="stylesheet" href="../css/animation.css">
   <body>
 
     <nav>
@@ -53,105 +54,20 @@
           <p>Ésta será pegada en nuestro html, dentro del body, en la parte final.</p>
         </section>
         <section>
-          <h3 id="seccion2">Nav</h3>
+          <h3 id="seccion2">Copy Paste</h3>
           <p>
             En la parte superior de la página de Bootstrap, encontraremos un item de EJEMPLOS, al clickear allí seremos redirigidos a una sección en la que encontraremos gran variedad de ejemplos disponibles, es allí donde buscaremos alguna barra de navegación.
           </p>
           <p>
-            Ya elegida, inspecciona su código, copialo, y pégalo en tu html, tan simple como éso, puedes adaptarlo a tus gustos quitando lo que no desees.
+            Ya elegida, inspecciona su código, copialo, y pégalo en tu html, tan simple como éso, puedes adaptarlo a tus gustos quitando lo que no desees (no quites demás).
           </p>
-          <p>En la terminal abierta, escribiremos los siguientes comandos:</p>
-          <p>
-            <span>git init</span>: inicializa la funcionalidad del git, creando
-            una carpeta oculta con el nombre de .git, es necesario recomendarte
-            que no toques esos archivos, no los borres ni los cambies de
-            ubicación, <span>no toques éso!</span>.
-          </p>
-          <p>
-            Como será nuestro repositorio, lo registramos con nuestros datos,
-            utilizando el comando "git config --global user.name
-            <spam class="comillas">"nombre de ejemplo"</spam>", de la misma
-            manera repetimos para "git commit config --global user.email
-            <spam class="comillas">"email@deprueba.com"</spam>".
-          </p>
-        </section>
-        <section>
-          <h3 id="seccion3">Creando repositorio en GitHub:</h3>
-          <p>
-            Una vez ingresado en la cuenta creada en la página oficial de
-            GitHub, a la parte superior del margen derecho, se puede desplegar
-            la opción de <spam>"New repository"</spam>.
-          </p>
-          <p>
-            Antes de darle clic a <spam>Create repository</spam>, deberás
-            completar los campos en blanco, comenzando por el nombre de
-            repositorio, si quieres, puedes agregar una descripción, luego
-            seleccionar el estado que tendrá el proyecto, puede ser público o
-            privado, como también puedes o no iniciar agregando un archivo
-            README.
-          </p>
-          <p>
-            Listo, así como el Shampoo lleva instrucciones, no queda más que
-            seguir las mismas que ofrece la página de GitHub.
-          </p>
-          <p>
-            Como ya hemos hecho un git init, ya tenemos nuestro archivo
-            README.md, sólo queda por hacer un "git add .", y un "git commit -m
-            "el nombre o detalle de lo que has hecho que referencie a los
-            cambios"; de esta manera agregaremos todos los archivos al
-            directorio .git. Ahora si, pasaremos al siguiente apartado que
-            menciona la página y escribiremos "git remote add origin
-            https://github.com/tunombreusuario/tunombrerepositoriocreado
-            (bastante largo? utiliza el copy paste!), de esta manera se
-            conectará con el repositorio de GitHub al cual enviaremos nuestros
-            archivos, mediante el uso del comando "git push -u origin master".
-          </p>
-          <p>
-            Compruébalo, tanto tu carpeta local, como el repositorio de GitHub
-            tienen los mismos archivos.
-          </p>
-        </section>
-        <section>
-          <h3 id="seccion4">Creando una rama de desarrollo</h3>
-          <p>
-            También conocida como branch, crearemos otra rama a la cual iremos
-            modificando, es así que en nuestra terminal escribiremos "git branch
-            develop", la famosa rama de desarrollador en la que realizaremos
-            todos nuestros cambios hasta que esten listos para ser publicados en
-            nuestra rama master.
-          </p>
-          <p>
-            Si te arrepientes puedes eliminarla de la misma manera escribiendo
-            "git branch -D develop", si no, continuemos. Agrega los cambios y
-            realiza un commit, para luego hacer uso del push con el siguiente
-            comando "git push --set-upstream origin develop".
-          </p>
-          <p>
-            Antes de seguir avanzando, haremos un salto gigante, una vez
-            finalizado y aplicado los cambios que queremos a nuestra rama
-            develop, vamos a fusionar nuestros arvhicos con la rama principal
-            del proyecto, para ellom, devemos posicionarnos en nuestra rama
-            principal, consulta mediante el comando "git branch", posisiónate
-            mediante "git checkout master", y luego se utiliza el siguiente
-            comando: "git marge develop".
-          </p>
-          <p>
-            Ahora si, entra a tus archivos html y modifícalos, carga
-            información, usa frameworks, aplícales tus propios estilos mediante
-            css, <span>juega!</span>.
-          </p>
+          <p>Puedes seguir inspeccionando y copiando otros elementos, como el Header, el Footer, e inclusive todo el Body por qué no?</p>
         </section>
       </article>
     </main>
+
     <aside>
-      <h3>INDICE</h3>
-      <ul>
-        <a href="#seccion1"><li>Creando un repositorio local</li></a>
-        <a href="#seccion2"><li>Git local</li></a>
-        <a href="#seccion3"><li>Creando repositorio en GitHub</li></a>
-        <a href="#seccion4"><li>Creando una rama de desarrollo</li></a>
-        <a href="#nosotros"><li>Nosotros Inc</li></a>
-      </ul>
+      <img class="spiderman" src="../Img/spiderman.jpg" alt="">
     </aside>
     <footer>
       <h3 id="nosotros">Contacto</h3>
