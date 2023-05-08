@@ -1,0 +1,15 @@
+body{
+    background-image: url(../Img/fondo-futurista-tecnologia-degradada_23-2149131656.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: white;
+    margin-top: 60px;
+}
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
