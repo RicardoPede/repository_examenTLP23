@@ -5,8 +5,259 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
+
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="alternar tema (oscuro)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alternar tema</font></font></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Luz
+            </font></font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="dark" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Oscuro
+            </font></font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            Auto
+            </font></font><svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
     
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suscríbete al boletín</font></font></a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">grande</font></font></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="investigación">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>بحث</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crea una cuenta</font></font></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el mundo</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estados Unidos</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tecnología</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el diseño</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Civilización</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dinero y negocios</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Política</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">opinión general</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">las ciencias</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">la salud</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">moda</font></font></a>
+      <a class="p-2 link-secondary" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">viajar</font></font></a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Título de publicación destacado más largo</font></font></h1>
+      <p class="lead my-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Varias líneas múltiples de texto expresan reflejos, para informar de manera rápida y eficiente a los nuevos lectores sobre las cosas más interesantes en el contenido de esta publicación.</font></font></p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sigue leyendo...</font></font></a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el mundo</font></font></strong>
+          <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Publicación destacada</font></font></h3>
+          <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12 de noviembre</font></font></div>
+          <p class="card-text mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural al contenido adicional.</font></font></p>
+          <a href="#" class="stretched-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sigue leyendo</font></font></a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">el diseño</font></font></strong>
+          <h3 class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Título profesional</font></font></h3>
+          <div class="mb-1 text-body-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11 de noviembre</font></font></div>
+          <p class="mb-auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural al contenido adicional.</font></font></p>
+          <a href="#" class="stretched-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sigue leyendo</font></font></a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Miniatura" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">صورة مصغرة</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        de Firehose
+      </font></font></h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ejemplo de una publicación</font></font></h2>
+        <p class="blog-post-meta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 de enero de 2021 por </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Marcos</font></font></a></p>
+
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Esta publicación de blog muestra algunos tipos diferentes de contenido que funcionan y están diseñados con Bootstrap. </font><font style="vertical-align: inherit;">El texto del cuerpo, las imágenes y el código son totalmente compatibles.</font></font></p>
+        <hr>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Asegurar los alimentos en el futuro es un tema que preocupa tanto a los gobiernos como a los científicos del mundo. </font><font style="vertical-align: inherit;">Durante el siglo XX, la población de la Tierra se cuadriplicó y se estima que el número alcanzará los diez mil millones de personas para el año 2050 d.C. </font><font style="vertical-align: inherit;">Este enorme aumento representará un gran desafío y una creciente presión sobre la capacidad de producción agrícola. </font><font style="vertical-align: inherit;">Lo cual fue y debió impulsar el desarrollo de tecnologías innovadoras en la fabricación de alimentos distintos de la agricultura, incluyendo una tecnología de futuro basada en la fabricación de alimentos a partir del aire.</font></font></p>
+        <blockquote>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La agricultura ocupa grandes extensiones de tierra y consume enormes cantidades de agua, y la producción de alimentos a través de la agricultura contribuye con un alto porcentaje de las emisiones globales de gases de efecto invernadero.</font></font></p>
+        </blockquote>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La agricultura ocupa grandes extensiones de tierra y consume grandes cantidades de agua. </font><font style="vertical-align: inherit;">Además, la producción de alimentos a través de la agricultura contribuye a un alto porcentaje de las emisiones globales de gases de efecto invernadero. En comparación, este porcentaje de emisiones es mayor que el que produce el sector del transporte con todos sus automóviles, camiones, aviones y trenes.</font></font></p>
+        <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Título</font></font></h2>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las plantas obtienen su alimento mediante un proceso llamado fotosíntesis, en el que las plantas convierten la luz solar, el agua y el dióxido de carbono de la atmósfera en alimento y liberan oxígeno como subproducto de esta reacción química. </font><font style="vertical-align: inherit;">Este proceso ocurre en el cloroplasto. </font><font style="vertical-align: inherit;">Las plantas aprovechan la energía de la luz solar para dividir el agua en hidrógeno y oxígeno, y se producen otras reacciones químicas que dan como resultado la glucosa, que utilizan como fuente de alimento, y el oxígeno se libera de las plantas a la atmósfera. </font><font style="vertical-align: inherit;">Esto significa que las plantas convierten el dióxido de carbono en alimento a través de complejas reacciones químicas. </font><font style="vertical-align: inherit;">La fotosíntesis es una de las reacciones químicas más importantes de la Tierra, en el pasado ayudó a la evolución de nuestro planeta y al surgimiento de la vida en él. </font><font style="vertical-align: inherit;">¡Las plantas usan dióxido de carbono para hacer su propio alimento y liberan oxígeno para ayudar a otros organismos a respirar!</font></font></p>
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">subdirección</font></font></h3>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este proceso inspiró a los científicos de la NASA durante la década de 1960 a explorar la idea de alimentar a los astronautas en misiones espaciales largas como viajar a Marte. </font><font style="vertical-align: inherit;">Una de las ideas prometedoras era fabricar alimentos utilizando dióxido de carbono producido por astronautas, pero no por plantas, sino por pequeños microbios unicelulares que son capaces de cosechar dióxido de carbono para producir abundantes cantidades de proteína nutritiva en forma de polvo sin sabor. La sustancia también se puede usar para hacer los alimentos con los que estamos familiarizados.</font></font></p>
+        <pre><code>Example code block</code></pre>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Al contrario de lo que sucede en el mundo vegetal, estos microbios no utilizan la luz como el proceso de fotosíntesis que utilizan las plantas para obtener alimento, es decir, porque son capaces de crecer en la oscuridad. </font><font style="vertical-align: inherit;">Estas bacterias se llaman hidrogenótrofas y utilizan hidrógeno como combustible para producir alimentos a partir de dióxido de carbono. </font><font style="vertical-align: inherit;">Cuando los astronautas producen dióxido de carbono, los microbios lo recogen y, junto con otros insumos, lo convierten en alimento rico en carbono. </font><font style="vertical-align: inherit;">De esta forma obtendremos un ciclo de carbono en lazo cerrado.</font></font></p>
+        <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">subdirección</font></font></h3>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tras más de medio siglo de investigación de la NASA, varias empresas del sector de la biología sintética, entre ellas Air Protein y Solar Foods, están trabajando en el desarrollo de una nueva generación de productos alimentarios sostenibles, sin huella de carbono. </font><font style="vertical-align: inherit;">Y estos productos alimenticios no se limitarán solo a los astronautas, sino que se extenderán a todos los habitantes de la Tierra, y se producirán en un breve espacio de tiempo, en lugar de meses, y sin depender de las tierras agrícolas. </font><font style="vertical-align: inherit;">Esto significa obtener productos alimenticios muy rápidamente. </font><font style="vertical-align: inherit;">También será posible fabricar alimentos de forma vertical a través de estos microbios, en lugar del método horizontal tradicional similar a la tecnología agrícola vertical moderna. </font><font style="vertical-align: inherit;">Esto significa proporcionar productos alimenticios que son más grandes que la misma área.</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La alimentación humana consta de tres tipos principales:</font></font></p>
+        <ul>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">proteinas</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">carbohidratos</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Grasas</font></font></li>
+        </ul>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las proteínas están compuestas de aminoácidos, que son un grupo de compuestos orgánicos que suman veinte en el cuerpo humano, incluidos nueve esenciales que el cuerpo obtiene de los alimentos. </font><font style="vertical-align: inherit;">Los aminoácidos consisten principalmente en:</font></font></p>
+        <ol>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">carbón</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">hidrógeno</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">oxígeno</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nitrógeno</font></font></li>
+        </ol>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Se observa que el nitrógeno constituye el 78% del aire, y el hidrógeno lo obtenemos a través de la electrólisis del agua, y es teóricamente posible extraer carbono del aire para formar estos ácidos, porque el carbono es la columna vertebral de los aminoácidos, y la vida en el planeta se basa en el carbono por su capacidad para formar largas cadenas de carbono, y esto es lo que hacen los microbios al fabricar aminoácidos a partir del dióxido de carbono a través de un conjunto de reacciones químicas complejas. </font><font style="vertical-align: inherit;">Además de hacer comidas ricas en proteínas, estos microbios producen otros productos, como aceites, que tienen muchos usos.</font></font></p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">otra publicación</font></font></h2>
+        <p class="blog-post-meta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">23 de diciembre de 2020 por </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jacob</font></font></a></p>
+
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoy en día, varias empresas están estudiando estos microbios más profundamente y cultivándolos como alimento. </font><font style="vertical-align: inherit;">En 2019, los investigadores de la empresa estadounidense (Air Protein) anunciaron su éxito al convertir el dióxido de carbono del aire en carne industrial hecha de proteína, que no requiere ninguna tierra agrícola, sino que depende principalmente del aire.</font></font></p>
+        <blockquote>
+          <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La carne se hizo en muchos tipos</font></font></p>
+        </blockquote>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estos investigadores utilizaron aire y energía renovable como insumos en un proceso similar a la fermentación para producir una proteína que contiene los nueve aminoácidos esenciales y es rica en vitaminas y minerales, y está libre de hormonas, antibióticos, pesticidas y herbicidas.</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La carne fue procesada en muchos tipos, incluyendo aves, vacas y mariscos, sin emisiones de carbono, en contraste con la cría de vacas, que contribuyen a la emisión de metano, un gas de efecto invernadero.</font></font></p>
+      </article>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nueva caracteristica</font></font></h2>
+        <p class="blog-post-meta"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14 de diciembre de 2020 por </font></font><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jacob</font></font></a></p>
+
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Y la empresa finlandesa (Solar Foods) ha desarrollado una tecnología para producir proteínas a partir del aire, ya que el proceso comienza desdoblando el agua en sus componentes hidrógeno y oxígeno a través de la electricidad. </font><font style="vertical-align: inherit;">El hidrógeno proporciona la energía para que las bacterias conviertan el dióxido de carbono y el nitrógeno del aire en materia orgánica rica en proteínas de manera más eficiente que las plantas que crecen mediante la fotosíntesis. </font><font style="vertical-align: inherit;">Esta proteína es similar a la harina de trigo y se le ha llamado "soleína".</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Actualmente, la empresa está recopilando datos sobre el producto alimenticio para enviarlo a la Unión Europea con el fin de obtener una licencia de alimentos, y planea comenzar la producción comercial en el próximo año 2021. </font><font style="vertical-align: inherit;">La empresa ha indicado que está interesada en producir alimentos respetuosos con el medio ambiente mediante el uso de materias primas: electricidad y dióxido de carbono, y estos alimentos evitarán el impacto ambiental negativo de la agricultura tradicional, que incluye desde el uso de la tierra y el agua hasta las emisiones. como resultado de la fertilización de cultivos o la cría de animales.</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Como tal, las proteínas derivadas de microbios:</font></font></p>
+        <ul>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Proporciona una posible solución a la luz de la creciente demanda mundial de alimentos en el futuro.</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las fábricas de alimentos del futuro se están expandiendo para ser más eficientes y sostenibles</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Podrá proporcionar alimento a los astronautas en su viaje a Marte y a todos los habitantes del planeta Tierra en el año 2050 d.C.</font></font></li>
+        </ul>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¡Imagine que los microbios serán las fábricas del futuro y que la comida del futuro estará hecha de aire! </font><font style="vertical-align: inherit;">Y que el año 2050 dC será completamente diferente a nuestro mundo actual. </font><font style="vertical-align: inherit;">¡Es un mundo sin agricultura ni crianza de animales para la alimentación! </font><font style="vertical-align: inherit;">Puede sonar elegante, ¡pero no es imposible!</font></font></p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Paginación">
+        <a class="btn btn-outline-primary rounded-pill" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Publicaciones más antiguas</font></font></a>
+        <a class="btn btn-outline-secondary rounded-pill disabled"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">últimas publicaciones</font></font></a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">alrededor</font></font></h4>
+          <p class="mb-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Viniste, así vino contigo la vida en todas sus variedades y colores: las plantas brotan, los árboles brotan y florecen, los gatos maúllan, la luna llora, las ovejas balan, las vacas mugen, y cada mascota llama a su mascota. </font><font style="vertical-align: inherit;">Todo se siente vivo y olvida las preocupaciones de la vida, y sólo menciona la alegría de la vida.Si el tiempo es un cuerpo, tú eres su alma, y ​​si es una vida, tú eres su juventud.</font></font></p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">archivo</font></font></h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">marzo 2021</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">febrero 2021</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">enero 2021</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">diciembre 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">noviembre 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">octubre 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">septiembre 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">agosto 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">julio 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">junio 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">mayo 2020</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">abril 2020</font></font></a></li>
+          </ol>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">en otro lugar</font></font></h4>
+          <ol class="list-unstyled">
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gorjeo</font></font></a></li>
+            <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook</font></font></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="blog-footer">
+  <p><font style="vertical-align: inherit;"></font><a href="https://getbootstrap.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La plantilla de Blogger para Bootstrap</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> está diseñada </font><font style="vertical-align: inherit;">por</font></font><a href="https://twitter.com/mdo"><bdi lang="en" dir="ltr"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@mdo</font></font></bdi></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+  <p>
+    <a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Volver a la parte superior</font></font></a>
+  </p>
+</footer><div id="goog-gt-" class="skiptranslate VIpgJd-yAWNEb-L7lbkb" dir="ltr"><div style="padding: 8px;"><div><div class="VIpgJd-yAWNEb-l4eHX"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Traductor de Google"></div></div></div><div style="padding: 8px; float: left; width: 100%;"><h1 class="VIpgJd-yAWNEb-r4nke VIpgJd-yAWNEb-mrxPge">Texto original</h1></div><div style="padding: 8px;"><div class="VIpgJd-yAWNEb-nVMfcd-fmcmS"></div></div><div class="VIpgJd-yAWNEb-cGMI2b" style="padding: 8px;"><div class="VIpgJd-yAWNEb-Z0Arqf-PLDbbf"><span class="VIpgJd-yAWNEb-Z0Arqf-hSRGPd">Sugiere una traducción mejor</span></div><div class="VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf"><hr style="color: #ccc; background-color: #ccc; height: 1px; border: none;"><div class="VIpgJd-yAWNEb-Z0Arqf-H9tDt"></div></div></div><div class="VIpgJd-yAWNEb-jOfkMb-Ne3sFf" style="display: none;"></div></div>
+
+
+    
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 </html>
