@@ -1,25 +1,25 @@
 .loading{
     position: absolute;
-    top: 50%;
+    top: 200%;
     left: 50%;
     right: 40%;
     overflow: hidden;
     box-shadow: -5px -5px - 5px
     rgba(255, 255, 255, 0.1) 10px 10px 10px rgba(255, 255, 255, 0.2),
     inset -5px -5px -5px rgba(255, 255, 255, 0.2), inset 10px 10px 10px rgba(0, 0, 0, 0.4);
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 .loading::before{
     position: absolute;
-    content: '';
+    content:'';
     z-index: 10;
     opacity: 10;
-    top: 25px;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
     background-color: #050574;
     border-radius: 50%;
     box-shadow: -5px -5px -5px rgba(255, 255, 255, 0.1) 10px 10px 10px rgba(0, 0, 0, 0.4),

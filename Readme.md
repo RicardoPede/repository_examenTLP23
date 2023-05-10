@@ -1,3 +1,9 @@
+La idea del siguiente proyecto es crear un Portfolio personal con mis datos como autor, cumpliendo y siguiendo con todos los requisititos del trabajo evaluativo, por ello, ademas opté por realizar unas páginas en las que mostraba y enseñaba los primeros pasos para la utilización de Git y seguio de GitHub, así como un pequeño inicio a la utilización de Bootstrap.
+
+Para cumplir con el trabajo solicitado, se ha incorporado además archivos css de elaboración propia, como también una mezcla de Style desde el mismo archivo html.
+
+Se transcribe el trabajo evaluativo que fue utilizado:
+
 Primer Examen Parcial
 
 Fecha de entrega: 10 may, 17:00

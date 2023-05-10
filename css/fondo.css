@@ -1,24 +1,25 @@
 body{
-    background-image: url(../Img/vector-fondo-tecnologia-circuito-placa-base-azul-degradado_53876-112169.avif);
-    background-color: black;
-    background-position: 0px 40px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-image: url(../Img/vector-fondo-tecnologia-circuito-placa-base-azul-degradado_53876-112169.avif); */
+    /* background-position: 0px 40px; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+    /* width: auto; */
+    /* background-color: aqua; */
 }
 
-.fondo{
-    width: 90%;
-    height: 500px;
-    margin: 90px auto;
-    display: grid;
+/* .fondo{ */
+    /* width: 70%; */
+    /* height: 400px; */
+    /* margin: 90px auto; */
+    /* display: flex;     */
+/* } */
 
-}
-
-.titulo_centro{
-    margin: auto;
-    color: rgb(30, 248, 194);
-    font-size: 50px;
-    font-family: cursive;
-    background-color: rgb(0, 0, 0, 0.2);
-    border-radius: 20px;
-}
+/* .titulo_centro{ */
+    /* margin: auto; */
+    /* color: rgb(30, 248, 194); */
+    /* font-size: 50px; */
+    /* font-family: cursive; */
+    /* background-color: rgb(0, 0, 0, 0.2); */
+    /* border-radius: 20px; */
+    /* text-align: center; */
+/* } */
